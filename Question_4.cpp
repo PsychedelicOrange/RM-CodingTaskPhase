@@ -29,6 +29,7 @@ int main()
        
        
      } 
+    delete[] a;
      if(mult<0&&isHill!=0)  
         std::cout<<"Is a hill number";
     else
