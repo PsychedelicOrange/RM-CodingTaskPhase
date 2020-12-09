@@ -1,3 +1,7 @@
+/*
+Write a function to find the length of a string using pointers.
+*/
+
 #include <iostream>
 #include <cstring>
 

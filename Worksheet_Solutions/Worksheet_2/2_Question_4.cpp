@@ -1,3 +1,11 @@
+/*
+
+Write two functions:
+i. To perform matrix multiplication
+ii. To find transpose of a matrix.
+Use two matrices to verify the identity (A.B)’ = B’. A’
+
+*/
 #include <iostream>
 
 int** mat_mult(int** a,int* a_size,int** b,int* b_size)
@@ -23,7 +31,7 @@ int** mat_mult(int** a,int* a_size,int** b,int* b_size)
             sum=0;
             }
     
-return c;
+    return c; // return pointer of created matrix
 }
 int** mat_trans(int** a,int* a_size)
 {   

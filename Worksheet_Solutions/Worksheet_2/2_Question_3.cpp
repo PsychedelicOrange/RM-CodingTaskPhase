@@ -1,3 +1,6 @@
+//Write a function to copy a string into another string using pointers.
+
+
 #include <iostream>
 #include <cstring>
 
