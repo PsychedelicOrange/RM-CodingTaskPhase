@@ -6,7 +6,8 @@ lengths.
  number word
  cat number
 (b) Also, sort each individual string in ascending order.
-Output: act
+Output:
+ act
  dorw
  bemnru
  */
@@ -15,16 +16,20 @@ Output: act
 #include <string>
 void sortstring(std::string* x,int n,int* l)
 {
-     int i, j, imin;
-   for(i = 0; i<n-1; i++) 
-      {imin = i;   
-             for(j = i+1; j<n; j++)
-                {if(l[j] < l[imin])
-                    imin = j;
-                }
-         
-         (x[i]).swap( x[imin]);
-      }
+        int i, j;  
+    for (i = 0; i < n-1; i++)      
+        for (j = 0; j < n-i-1; j++)  
+            if (l[j] > l[j+1])  
+                {
+                    int temp;
+                    temp=l[j];
+                    l[j]=l[j+1];
+                    l[j+1]=temp;
+                    std::string tempstr;
+                    tempstr = x[j];
+                    x[j]=x[j+1];
+                    x[j+1]=tempstr;
+                }  
 }
 int main()
 {   
@@ -39,8 +44,6 @@ int main()
     for(int i=0;i<nw;i++)
     {
         std::cin>>a[i];
-        
-
     }
     for(int i=0;i<nw;i++)
     {
