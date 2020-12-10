@@ -85,6 +85,7 @@ int main()
         std::cout<<length[i]<<" "<<a[i]<<"\n";
     }
     delete a;
+    delete length;
     
   return 0;
 }// 10 cat dog bufallo battledog catterpillar moth giraffe lemur edgar maya
