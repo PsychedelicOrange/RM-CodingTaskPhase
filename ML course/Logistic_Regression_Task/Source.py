@@ -1,3 +1,4 @@
+# Implement logistic regression to predict the risk of heart disease. To be implemented using numpy (no other advanced external libraries).
 import numpy as np
 import pandas as pd
 import math
