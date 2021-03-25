@@ -1,3 +1,6 @@
+# QUESTION : Implement linear regression to predict car prices. To be implemented using numpy (no other advanced external libraries). Given CSV.
+
+
 import numpy as np
 import pandas as pd
 data = pd.read_csv("car_price.csv")
